@@ -3,6 +3,8 @@ import re
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
+import datetime
+
 
 import plotly.express as px
 import folium
@@ -181,9 +183,9 @@ st.sidebar.markdown('## Fastest Delivery in town')
 st.sidebar.markdown("""___""")
 
 data_slider = st.sidebar.slider('Selecione uma data limite',
-                                value=pd.datetime(2022, 6, 4),
-                                min_value=pd.datetime(2022, 2, 11),
-                                max_value=pd.datetime(2022, 6, 4),
+                                value=datetime.datetime(2022, 4, 13),
+                                min_value=datetime.datetime(2022, 2, 11),
+                                max_value=datetime.datetime(2022, 4, 6),
                                 format='DD-MM-YYYY')
 st.sidebar.markdown("""___""")
 
